@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Scroll Animation - Assignment</title>
+    <style>
+        body{
+            margin: 0px;
+            padding:0px;
+            font-family: Arial, Helvetica, sans-serif;
+            background: beige;
+            line-height: 1.5;
+
+        }
+        header{
+            padding:20px 10px; 
+            text-align:center; 
+            background:#333; 
+            color:white; 
+        }
+        footer{
+            text-align: center; 
+            padding: 20px; 
+            background-color: #333; 
+            color: white; 
+            margin-top: 80px;
+        }
+
+        .container{
+            max-width: 800px;
+            margin: 0 auto;
+            padding:40px 20px;
+        }
+        h1,h2{
+        text-align: center;
+        margin-bottom: 40px;
+        }
+        .Reveal{
+            /*border: 2px solid red;*/
+            transform:translateY(200px);
+            opacity: 0;
+            transition:all 1.8s ease-in-out;
+
+            animation: revealAnimation linear forwards;
+            animation-timeline: view();
+            animation-range: entry 0% cover 30%;
+        }
+        @keyframes revealAnimation{
+            to{
+                opacity: 1;
+                transform: translateY(0px);
+            }
+        }
+
+        .card{
+            background:white;
+            padding:20px;
+            margin-bottom: 40px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.20);
+        }
+     </style>
+    </head>
+    <body>
+        <header>
+        <h1>Scroll Animation</h1>
+        <h2>Assignment by Sooraj Krishna </h2>
+        </header>
+        
+        <div class="container">
+            <div class="card Reveal">
+                <h2>Section 1</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet incidunt natus aliquam reiciendis est ab qui distinctio nisi laudantium. Fuga nesciunt esse recusandae. Aliquid provident asperiores laboriosam! Natus beatae voluptates, commodi maiores odio ad repellat praesentium est velit voluptas dolores.</p>
+        </div>
+        <div class="card Reveal">
+                <h2>Section 2</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, nihil fugit cupiditate exercitationem assumenda voluptatibus quam animi fugiat corrupti dolor, expedita voluptas itaque. At cupiditate ullam corporis dolorum suscipit laborum quis, voluptatem autem dolores odit tempora illum, dolor nesciunt illo fuga id! Quas autem repudiandae eos. A voluptatem debitis omnis.</p>
+        </div>
+        <div class="card Reveal">
+                <h2>Section 3</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio maiores voluptas libero facilis culpa iusto dignissimos at delectus vel, illo alias earum soluta consequuntur optio cumque doloremque, dolor in nulla. Distinctio modi ullam, quam quisquam, unde aspernatur voluptates sequi quo rem, adipisci minima dolores libero!</p>
+        </div>
+        <div class="card Reveal">
+                <h2>Section 4</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum cumque iste natus odit cupiditate, provident distinctio, maxime quaerat vitae consequatur perferendis accusantium facilis eveniet omnis temporibus et at ipsa. Quasi ipsa perspiciatis recusandae quidem eum ad iusto, dolor consequuntur quam. Cum dicta eligendi deserunt dolorum minus autem veniam dignissimos saepe corrupti ab?</p>
+        </div>
+        <div class="card Reveal">
+                <h2>Section 5</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia est obcaecati aliquam, hic nobis eaque nihil numquam unde beatae aut porro doloribus soluta consequuntur possimus vel corporis id accusamus ducimus eum quos architecto nostrum. Nobis vitae aperiam incidunt architecto omnis harum eius cupiditate accusantium quibusdam?</p>
+        </div>
+        </div>
+
+
+        </body>
+        <footer>
+            &copy; 2024 Sooraj Krishna. All rights reserved.
+            </footer>   
+</html>
